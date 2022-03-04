@@ -29,11 +29,6 @@ class RickAndMortyGestion{
     public function findCart(){
         return $this->cartRepository->findAll()[0];
     }
-
-    public function findById(int $id){
-        return $this->repository->findById($id);
-    }
-
     public function addProductToCart(Product $product, int $quantity){
         if($quantity > $product->getQuantity()){
             throw new \Exception("too quantity");
