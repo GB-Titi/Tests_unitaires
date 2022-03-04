@@ -29,6 +29,7 @@
 
 >```
 > docker-compose exec app bash
+> composer install
 > XDEBUG_MODE=coverage ./vendor/bin/phpunit  --coverage-html=out/
 >```
 > - Il faut ensuite lancer liveserveur à la racine du projet.
