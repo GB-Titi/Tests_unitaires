@@ -1,17 +1,15 @@
 import useProduct from "../hooks/useProduct";
-
 const Product = ({ setRoute, data: product }: any) => {
   const { quantity, message, loading, setQuantity, addProduct } =
     useProduct(product);
-
   return (
     <div>
       {loading && <div>Loading....</div>}
       {message && <p>{message}</p>}
-      <div onClick={() => setRoute({ route: "home" })}>Retour</div>
+      <div className="button" onClick={() => setRoute({ route: "home" })}>Retour</div>
       <div>
-        <div>
-          <img src={product.image} alt="" />
+        <div className="product">
+          <img className="image" src={product.image} alt="" />
           <p>Figurine de {product.name}</p>
           <p>Quantitée {product.quantity}</p>
         </div>
@@ -23,9 +21,8 @@ const Product = ({ setRoute, data: product }: any) => {
         onChange={(e) => setQuantity(Number(e.target.value))}
         placeholder="Quantité à ajouter"
       />
-      <button onClick={addProduct}>Ajouter au panier</button>
+      <button className="button" onClick={addProduct}>Ajouter au panier</button>
     </div>
   );
 };
-
 export default Product;

@@ -13,8 +13,9 @@ beforeEach(() => {
 
 test('renders learn react link', () => {
   const { container } = render(<App />);
-  const title = screen.getByText(/Aller sur panier/i);
-  expect(title).toBeInTheDocument();
+  const cart = screen.getByText(/Aller sur panier/i);
+  expect(cart).toBeInTheDocument();
+
 });
 
 
@@ -26,4 +27,6 @@ test("test sur le click", () => {
   act(() => {
     label.dispatchEvent(new MouseEvent("click", { bubbles: true }));
   });
+  const retour = screen.getByText(/Retour/i);
+  expect(retour).toBeInTheDocument();
 })

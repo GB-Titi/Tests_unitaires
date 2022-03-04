@@ -1,6 +1,5 @@
 import React from "react";
 import useCart from "../hooks/useCart";
-
 const Cart = ({ setRoute }: { setRoute: (data: any) => void }) => {
   const { loading, products, message, loadCart, removeToCart } = useCart();
   return (
@@ -12,12 +11,12 @@ const Cart = ({ setRoute }: { setRoute: (data: any) => void }) => {
         {products.map((product) => {
           return (
             <React.Fragment>
-              <div>
-                <img src={product.image} alt="" />
+              <div className="product">
+                <img className="image" src={product.image} alt="" />
                 <p>Figurine de {product.name}</p>
                 <p>Quantitée {product.quantity}</p>
               </div>
-              <button onClick={() => removeToCart(product)}>
+              <button className="button" onClick={() => removeToCart(product)}>
                 Supprimer du panier
               </button>
               <hr />
@@ -28,5 +27,4 @@ const Cart = ({ setRoute }: { setRoute: (data: any) => void }) => {
     </div>
   );
 };
-
 export default Cart;
