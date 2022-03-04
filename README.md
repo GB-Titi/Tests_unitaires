@@ -1,3 +1,3 @@
 # Tests_unitaires
 
-![example workflow](https://github.com/GB-Titi/Test_unitaires/actions/workflows/main.yml/badge.svg)
+![example workflow](https://img.shields.io/github/workflow/status/GB-Titi/Tests_unitaires/CI?label=build)
