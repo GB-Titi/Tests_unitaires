@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { endpoint, Product } from "../App";
 
-
 const useCart = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [products, setProducts] = useState<Product[]>([]);
@@ -32,13 +31,10 @@ const useCart = () => {
         .then((res) => res.json())
         .then((res) => {
           setMessage("Produit bien supprimé");
-          loadCart();
-          resolve(true);
+          loadCart().then(resolve);
         });
     });
   };
-
-
 
   return {
     loading,
