@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { endpoint, Product } from "../App";
 
+
 const useCart = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [products, setProducts] = useState<Product[]>([]);
@@ -17,10 +18,6 @@ const useCart = () => {
         });
     });
   };
-
-  useEffect(() => {
-    loadCart();
-  }, []);
 
   const removeToCart = (product: Product) => {
     return new Promise((resolve) => {
@@ -40,6 +37,8 @@ const useCart = () => {
         });
     });
   };
+
+
 
   return {
     loading,

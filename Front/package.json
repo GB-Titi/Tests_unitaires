@@ -39,5 +39,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.2",
+    "jest": "^27.5.1",
+    "jest-watch-typeahead": "^0.6.5",
+    "msw": "^0.38.2"
   }
 }
