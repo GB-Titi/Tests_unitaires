@@ -1,5 +1,5 @@
 # Projet : Tests_unitaires
-> YNOV Aix-En-Provence 2022
+*YNOV Aix-En-Provence 2022*
 
 ![example workflow](https://img.shields.io/github/workflow/status/GB-Titi/Tests_unitaires/CI?label=build)
 
