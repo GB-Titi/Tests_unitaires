@@ -34,8 +34,13 @@
 .product {
   display: flex;
   flex-direction: column;
-  background-color: #f9fafb;
+  background-color: #d1e7fd;
   padding: 20px;
+  text-align: center;
+align-items: center;
+border-radius: 15px;
+margin: 15px;
+border: solid 1px black;
 }
 .image {
   height: 100px;
@@ -46,4 +51,18 @@
   color: white;
   padding: 8px 16px;
   cursor: pointer;
+}
+
+.product_list {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.name {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
 }

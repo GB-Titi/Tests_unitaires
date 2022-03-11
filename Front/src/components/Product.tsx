@@ -7,11 +7,11 @@ const Product = ({ setRoute, data: product }: any) => {
       {loading && <div>Loading....</div>}
       {message && <p>{message}</p>}
       <div className="button" onClick={() => setRoute({ route: "home" })}>Retour</div>
-      <div>
+      <div className="product_list">
         <div className="product">
           <img className="image" src={product.image} alt="" />
-          <p>Figurine de {product.name}</p>
-          <p>Quantitée {product.quantity}</p>
+          <p className="name">Figurine de {product.name}</p>
+          <p className="qty">Quantitée {product.quantity}</p>
         </div>
       </div>
       <hr />

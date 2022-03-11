@@ -6,10 +6,9 @@
 
 ## Contributeurs : 
 
+- BARONI-QUINTAS Marco
 - MATTEOLI Tristan
 - RUIZ Tom
-- BARONI-QUINTAS Marco
-
 
 
 ## Lancement de l'application

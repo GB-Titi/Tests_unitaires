@@ -23,9 +23,11 @@ function App() {
   return (
     <div className="App">
       {route.route === "home" && <Home setRoute={setRoute} />}
-      {route.route === "product" && (
-        <Product setRoute={setRoute} data={route.data} />
-      )}
+      <div className="shop_content">
+        {route.route === "product" && (
+          <Product setRoute={setRoute} data={route.data} />
+        )}
+      </div>
       {route.route === "cart" && <Cart setRoute={setRoute} />}
     </div>
   );
